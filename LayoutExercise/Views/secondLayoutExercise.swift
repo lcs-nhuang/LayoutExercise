@@ -10,7 +10,6 @@ import SwiftUI
 struct secondLayoutExercise: View {
     var body: some View {
         
-        HStack {
             VStack {
                 HStack{
                     
@@ -38,7 +37,9 @@ struct secondLayoutExercise: View {
                     
                 }
                 HStack{
-                    Text("As white light passes through our atmosphere, tiny air molecules cause it to 'scatter'. The scattering caused by these tiny air molecules (known as Rayleigh scattering) increases as the wavelength of light decreases. ... Therefore, blue light is scattered more than red light and the sky appears blue during the day.As white light passes through our atmosphere, tiny air molecules cause it to 'scatter'. The scattering caused by these tiny air molecules (known as Rayleigh scattering) increases as the wavelength of light decreases. ... Therefore, blue light is scattered more than red light and the sky appears blue during the day.")
+                    VStack {
+                        Text("As white light passes through our atmosphere, tiny air molecules cause it to 'scatter'. The scattering caused by these tiny air molecules (known as Rayleigh scattering) increases as the wavelength of light decreases. ... Therefore, blue light is scattered more than red light and the sky appears blue during the day.As white light passes through our atmosphere, tiny air molecules cause it to 'scatter'. The scattering caused by these tiny air molecules (known as Rayleigh scattering) increases as the wavelength of light decreases. ... Therefore, blue light is scattered more than red light and the sky appears blue during the day.")
+                    }
                     VStack{
                         Text("As white light passes through our atmosphere, tiny air molecules cause it to 'scatter'. The scattering caused by these tiny air molecules (known as Rayleigh scattering) increases as the wavelength of light decreases. ... Therefore, blue light is scattered more than red light and the sky appears blue during the day.As white light passes through our atmosphere, tiny air molecules cause it to 'scatter'. The scattering caused by these tiny air molecules (known as Rayleigh scattering) increases as the wavelength of light decreases. ... Therefore, blue light is scattered more than red light and the sky appears blue during the day.")
                         
@@ -51,13 +52,15 @@ struct secondLayoutExercise: View {
                             
                         
                     }
-                    Text("Sunlight reaches Earth's atmosphere and is scattered in all directions by all the gases and particles in the air. Blue light is scattered more than the other colors because it travels as shorter, smaller waves. This is why we see a blue sky most of the time.")
+                    VStack {
+                        Text("Sunlight reaches Earth's atmosphere and is scattered in all directions by all the gases and particles in the air. Blue light is scattered more than the other colors because it travels as shorter, smaller waves. This is why we see a blue sky most of the time.")
+                    }
                 }
                 
                 Spacer()
-            }
+            }.edgesIgnoringSafeArea(.top)
            
-        }
+        
     }
 }
 
